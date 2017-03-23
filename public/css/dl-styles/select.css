@@ -1,0 +1,105 @@
+/*****************************/
+/* select
+/****************************/
+.dl-select {
+    margin-bottom: 30px;
+    position: relative;
+}
+
+.dl-select input {
+    outline: none;
+    height: 36px;
+    border-radius: 2px;
+    border: 1px solid #ddd;
+    padding-left: 10px;
+    font-size: 14px;
+    color: #4d5761;
+    width: 400px;
+}
+
+.dl-select i.fa-caret-down {
+    font-size: 12px;
+    color: #c2c6c9;
+    position: absolute;
+    left: 380px;
+    top: 12px;
+}
+
+.dl-select input:focus {
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+.dl-select input:disabled {
+    background-color: #f2f2f2;
+    cursor: not-allowed;
+}
+
+.dl-select .dropdown-menu {
+    margin: 0;
+    border: 1px solid #ddd;
+    width: 400px;
+    border-radius: 2px;
+    border-top: 0;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    padding: 0;
+}
+
+.dl-select .dropdown-menu button {
+    width: 398px;
+    height: 36px;
+    text-align: left;
+    padding: 0 10px;
+    font-size: 14px;
+    color: #7c868d;
+    display: block;
+    margin: 0;
+    border: 0;
+    background: #fff;
+}
+
+.dl-select .dropdown-menu button:hover {
+    color: #4d5761;
+    background: #fcfcfc;
+}
+
+.dl-select .dropdown-menu button:focus {
+    color: #fff;
+    background: #3fb3ff;
+}
+
+.dl-select.addon input {
+    width: 360px;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+.dl-select.addon a.addon:after {
+    font-size: 12px;
+    color: #c2c6c9;
+}
+
+.dl-select.addon a.addon {
+    padding: 10px 16px 10px 13px;
+    border: 1px solid #ddd;
+    font-size: 12px;
+    border-left: 0;
+    border-bottom-right-radius: 2px;
+    border-top-right-radius: 2px;
+}
+
+.dl-select.addon a.addon:hover {
+    background: #fcfcfc;
+}
+
+.dl-select.addon a.addon:focus {
+    background: #f8f8f8;
+}
+
+.dl-select.addon .dropdown-menu {
+    margin: 6px 0 0 0;
+    border: 1px solid #ddd;
+    width: 400px;
+    border-radius: 2px;
+}

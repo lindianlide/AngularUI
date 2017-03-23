@@ -1,0 +1,6 @@
+<dl-navbar (collapse)="collapse($event)" (switchSidebar)="switch($event)"></dl-navbar>
+<dl-sidebar-static [isCollapsed]="isCollapsed" [switchSidebar]="switchSidebar"></dl-sidebar-static>
+<div class="dl-content-wrapper" [class.dl-sidebar-collapsed-content]="isCollapsed || switchSidebar === 'home'">
+    <router-outlet></router-outlet>
+</div>
+<template ngbModalContainer></template>

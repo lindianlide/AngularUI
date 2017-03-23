@@ -1,0 +1,51 @@
+/*****************************/
+/* banner
+/****************************/
+.dl-banner {
+    position: relative;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    text-align: center;
+    text-shadow: 0 1px 0 rgba(0, 0, 0, .1);
+    
+}
+
+.dl-banner-first {
+    width: 100%;
+    height: 650px;
+    margin: 0 auto;
+    padding: 180px 15px;
+    background-color: #3366FF;
+    color: #fff;
+    /* 颜色渐变 */
+    background-image: linear-gradient(to bottom, #3366FF 0, #66cccc 100%);
+    background-repeat: repeat-x;
+}
+.dl-banner-second {
+    width: 100%;
+    height: 660px;
+    margin: 0 auto;
+    padding: 180px 15px;
+    color: #3366FF;
+    background-color: #FFFFFF;
+}
+.dl-banner-logo {
+    margin: 0 auto 20px;
+    display: block;
+}
+
+.dl-banner-logo img {
+    height: 100px;
+}
+
+.dl-banner-title {
+    font-size: 6em;
+   
+}
+
+.dl-banner-subtitle {
+    font-size: 2em;
+    margin: 30px 0 auto;
+}

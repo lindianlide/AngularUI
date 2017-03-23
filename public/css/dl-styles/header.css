@@ -1,0 +1,81 @@
+/*****************************/
+/* header
+/****************************/
+.dl-header {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1030;
+    display: block;
+}
+
+.dl-header .logo-mini {
+    background-color: #333333;
+    color: #00abff;
+    display: block;
+    float: left;
+    height: 50px;
+    font-size: 20px;
+    line-height: 50px;
+    text-align: center;
+    width: 100px;
+    padding: 15px 0;
+    font-weight: 300;
+    overflow: hidden;
+}
+
+.dl-header .logo-mini .logo-img {
+    height: 20px;
+    margin-top: -5px;
+}
+
+.dl-header .logo-lg {
+    background-color: #333333;
+    color: #00abff;
+    display: block;
+    float: left;
+    height: 50px;
+    font-size: 20px;
+    line-height: 50px;
+    text-align: center;
+    width: 200px;
+    padding: 15px 0;
+    font-weight: 300;
+    overflow: hidden;
+}
+
+.dl-header .logo-lg .logo-img {
+    height: 20px;
+    margin-top: -5px;
+}
+
+.dl-header .logo-lg span {
+    display: block;
+}
+
+.dl-header .logo-mini span {
+    display: block;
+}
+
+.dl-navbar {
+    background-color: #333333;
+    color: #fff;
+    display: block;
+    border: none;
+    z-index: 1000;
+    height: 50px;
+    border-radius: 0;
+}
+
+.dl-navbar .dl-navbar-link {
+    color: #fff;
+    float: left;
+    font-size: 14px;
+    padding: 18px 14px;
+}
+
+.dl-navbar .dl-navbar-link:hover {
+    color: #f6f6f6;
+    background-color: rgba(255, 255, 255, 0.1);
+}

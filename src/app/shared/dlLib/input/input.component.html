@@ -1,7 +1,9 @@
 <div class="dl-input-all">
     <div class="dl-input-wrapper">
-        <label [attr.for]="inputId">{{label}}</label>
-        <input class="dl-input" [id]="inputId" [class.hint]="showHint">
+        <!-- <label [attr.for]="inputId">{{label}}</label> -->
+        <input [id]="inputId" [class.hint]="showHint" [ngClass]="setClass()"
+        [placeholder]="placeholder" [disabled]="disabled" [required]="required">
+        <ng-content></ng-content>
     </div>
     <div *ngIf="showHint" class="dl-input-hint">验证有问题！</div>
 </div>

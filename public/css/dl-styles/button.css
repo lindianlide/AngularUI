@@ -50,6 +50,41 @@
     border-color: #009ceb;
 }
 
+
+.dl-btn-cancel {
+    border: 1px solid #eeeeee;
+    background-color: #fff;
+    color: #00abff;
+}
+
+.dl-btn-cancel:hover {
+    background-color: #fcfcfc;
+    color: #00abff;
+}
+
+.dl-btn-cancel:focus {
+    background-color: #f8f8f8;
+    color: #00abff;
+}
+
+.dl-btn-warning {
+    color: #fff;
+    background-color: #ff5b55;
+    border-color: #ff5b55;
+}
+
+.dl-btn-warning:hover {
+    color: #fff;
+    background-color: #f55651;
+    border-color: #f55651;
+}
+
+.dl-btn-warning:focus {
+    color: #fff;
+    background-color: #eb534d;
+    border-color: #eb534d;
+}
+
 .dl-btn-default {
     color: #00abff;
     background-color: #fff;
@@ -94,34 +129,34 @@
     border-bottom-right-radius: 0;
 }
 
-.dl-btn-success {
+.dl-btn-icon {
     color: #fff;
     border-color: #73cf22;
     background: #73cf22;
 }
 
-.dl-btn-success.create {
+.dl-btn-icon.create {
     padding-left: 32px;
     background: #73cf22 url("../../images/btn_icon_create.png") no-repeat 10px 10px;
 }
 
-.dl-btn-success:hover {
+.dl-btn-icon:hover {
     color: #fff;
     background: #6cc41f;
     border-color: #6cc41f;
 }
 
-.dl-btn-success.create:hover {
+.dl-btn-icon.create:hover {
     background: #6cc41f url("../../images/btn_icon_create.png") no-repeat 10px 10px;
 }
 
-.dl-btn-success:focus {
+.dl-btn-icon:focus {
     color: #fff;
     background: #67ba1e;
     border-color: #67ba1e;
 }
 
-.dl-btn-success.create:focus {
+.dl-btn-icon.create:focus {
     background: #67ba1e url("../../images/btn_icon_create.png") no-repeat 10px 10px;
 }
 
@@ -185,36 +220,4 @@
 .dl-btn-operate-more-dropdown-menu button:not(:last-child) {
     border-bottom-left-radius: 0;
     border-bottom-right-radius: 0;
-}
-
-.dl-btn-cancel {
-    border: 1px solid #eeeeee;
-    background-color: #fff;
-    color: #00abff;
-}
-
-.dl-btn-cancel:hover {
-    background-color: #fcfcfc;
-}
-
-.dl-btn-cancel:focus {
-    background-color: #f8f8f8;
-}
-
-.dl-btn-delete {
-    color: #fff;
-    background-color: #ff5b55;
-    border-color: #ff5b55;
-}
-
-.dl-btn-delete:hover {
-    color: #fff;
-    background-color: #f55651;
-    border-color: #f55651;
-}
-
-.dl-btn-delete:focus {
-    color: #fff;
-    background-color: #eb534d;
-    border-color: #eb534d;
 }

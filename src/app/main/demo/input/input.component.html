@@ -1,4 +1,51 @@
-<h3>Input</h3>
-<dl-input [label]="'姓名'"></dl-input>
-<dl-input [label]="'毕业学校'"></dl-input>
-<dl-input [label]="'联系电话'"></dl-input>
+<section class="dl-content-header">
+  <h1>输入框-Input</h1>
+  <small>提供两种不同尺寸的输入框，包含内容说明，验证样式</small>
+</section>
+
+<section class="dl-content">
+  <h2>场景一：基本类型</h2>
+    <dl-input [classType]="'lg'" [placeholder]="'长尺寸'"></dl-input>
+    <div class="h-20"></div>
+    <dl-input [classType]="'sm'" [placeholder]="'短尺寸'"></dl-input>
+  
+
+  <h2>场景二：禁用的</h2>
+    <dl-input [classType]="'lg'" [placeholder]="'禁用的'" [disabled]="true">长尺寸</dl-input>
+    <div class="h-20"></div>
+    <dl-input [classType]="'sm'" [placeholder]="'禁用的'" [disabled]="true">短尺寸</dl-input>
+  
+
+  <h2>场景三：带有说明文字的</h2>
+   <dl-input [classType]="'lg'" [placeholder]="'带有说明文字的'">
+     <span class="notes">内容说明：只能包含字母、数字及下划线</span>
+   </dl-input>
+   
+  
+
+  <h2>场景四：带有校验的</h2>
+    <dl-input [classType]="'lg'" [placeholder]="'带有校验的'" [required]="true">
+       <span class="validation">内容说明：只能包含字母、数字及下划线</span>
+    </dl-input>
+
+
+  <h2>场景五：带有单位或图标的</h2>
+    <dl-input [classType]="'lg addon'" [placeholder]="'带有单位或图标的'">
+      <span class="addon">GB</span>
+    </dl-input>
+    <div class="h-20"></div>
+    <dl-input [classType]="'sm addon'" [placeholder]="'带有单位或图标的'">
+      <span class="addon">GB</span>
+    </dl-input>
+  
+
+  <h2>场景六：From To</h2>
+    <dl-input [classType]="'sm addon'" [placeholder]="'from'">
+      <span class="addon">GB</span>
+    </dl-input>
+    <i class="link">-</i>
+    <dl-input [classType]="'sm addon'" [placeholder]="'to'">
+      <span class="addon">GB</span>
+    </dl-input>
+
+</section>

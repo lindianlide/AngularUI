@@ -1,37 +1,64 @@
-<h3>Button</h3>
-<dl-button [classType]="'primary'">primary</dl-button>
-<dl-button [classType]="'secondary'">secondary</dl-button>
-<dl-button [classType]="'success'" [i]="'plus'">创建</dl-button>
-<dl-button [classType]="'info'">info</dl-button>
-<dl-button [classType]="'warning'">warning</dl-button>
-<dl-button [classType]="'danger'">danger</dl-button>
-<dl-button [classType]="'link'">link</dl-button>
-<br>
-<br>
-<dl-button [classType]="'primary-outline'">primary</dl-button>
-<dl-button [classType]="'secondary-outline'">secondary</dl-button>
-<dl-button [classType]="'success-outline'" [i]="'plus'">创建</dl-button>
-<dl-button [classType]="'info-outline'">info</dl-button>
-<dl-button [classType]="'warning-outline'">warning</dl-button>
-<dl-button [classType]="'danger-outline'">danger</dl-button>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<dl-button [classType]="'primary'" [disabled]="true">primary</dl-button>
-<dl-button [classType]="'secondary'" [disabled]="true">secondary</dl-button>
-<dl-button [classType]="'success'" [i]="'plus'" [disabled]="true">创建</dl-button>
-<dl-button [classType]="'info'" [disabled]="true">info</dl-button>
-<dl-button [classType]="'warning'" [disabled]="true">warning</dl-button>
-<dl-button [classType]="'danger'" [disabled]="true">danger</dl-button>
-<dl-button [classType]="'link'" [disabled]="true">link</dl-button>
-<br>
-<br>
-<dl-button [classType]="'primary-outline'" [disabled]="true">primary</dl-button>
-<dl-button [classType]="'secondary-outline'" [disabled]="true">secondary</dl-button>
-<dl-button [classType]="'success-outline'" [i]="'plus'" [disabled]="true">创建</dl-button>
-<dl-button [classType]="'info-outline'" [disabled]="true">info</dl-button>
-<dl-button [classType]="'warning-outline'" [disabled]="true">warning</dl-button>
-<dl-button [classType]="'danger-outline'" [disabled]="true">danger</dl-button>
+<section class="dl-content-header">
+  <h1>按钮-Button</h1>
+  <small>按钮通常有默认、鼠标移上、鼠标点击、禁止四种状态，如下提供了三种不同场景的按钮，</small>
+</section>
+
+<section class="dl-content">
+  <h2>按钮展示</h2>
+  <dl-button [classType]="'primary'">确认</dl-button>
+  <dl-button [classType]="'icon'" [i]="'plus'">创建</dl-button>
+  <dl-button [classType]="'warning'">删除</dl-button>
+  <dl-button [classType]="'cancel'">取消</dl-button>
+  <dl-button [classType]="'operate'">操作</dl-button>
+  <div class="h-20"></div>
+  <dl-button [classType]="'primary'" [disabled]="true">确认</dl-button>
+  <dl-button [classType]="'icon'" [i]="'plus'" [disabled]="true">创建</dl-button>
+  <dl-button [classType]="'warning'" [disabled]="true">删除</dl-button>
+  <dl-button [classType]="'cancel'" [disabled]="true">取消</dl-button>
+  <dl-button [classType]="'operate'" [disabled]="true">操作</dl-button>
+
+  <h2>场景一：关键按钮</h2>
+  <p>通常在页面标题的下方，例如创建、下载、导出等，通常会有一个小图标（使用fontawesome.io）</p>
+  <dl-button [classType]="'icon'" [i]="'plus'">创建</dl-button>
+  <dl-button [classType]="'icon'" [i]="'download'">下载</dl-button>
+  <dl-button [classType]="'icon'" [i]="'upload'">导出</dl-button>
+  <div class="h-20"></div>
+  <dl-button [classType]="'icon'" [i]="'plus'" [disabled]="true">创建</dl-button>
+  <dl-button [classType]="'icon'" [i]="'download'" [disabled]="true">下载</dl-button>
+  <dl-button [classType]="'icon'" [i]="'upload'" [disabled]="true">导出</dl-button>
+  <div class="h-20"></div>
+  <pre class="dl-pre">
+    <code>
+      {{iconCode}}
+    </code>
+  </pre>
+ 
+  <h2>场景二：组合按钮</h2>
+    <p>通常以一组的形式出现，如：确认、取消；删除、取消；</p>
+    <dl-button [classType]="'primary'">确认</dl-button>
+    <dl-button [classType]="'cancel'">取消</dl-button>
+    <dl-button [classType]="'warning'">删除</dl-button>
+    <dl-button [classType]="'cancel'">取消</dl-button>
+    <div class="h-20"></div>
+    <dl-button [classType]="'primary'" [disabled]="true">确认</dl-button>
+    <dl-button [classType]="'cancel'" [disabled]="true">取消</dl-button>
+    <dl-button [classType]="'warning'" [disabled]="true">删除</dl-button>
+    <dl-button [classType]="'cancel'" [disabled]="true">取消</dl-button>
+    <div class="h-20"></div>
+    <pre class="dl-pre">
+      <code>
+        {{combiCode}}
+      </code>
+    </pre>
+
+  <h2>场景三：表格按钮</h2>
+  <p>通常出现在表格的操作栏里；</p>
+    <dl-button [classType]="'operate'">编辑</dl-button>
+    <div class="h-20"></div>
+    <pre class="dl-pre">
+      <code>
+        {{operateCode}}
+      </code>
+    </pre>
+  
+</section>

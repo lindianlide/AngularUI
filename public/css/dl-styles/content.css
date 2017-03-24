@@ -2,11 +2,8 @@
 /* content
 /****************************/
 .dl-content-wrapper {
+    padding: 50px 0 0 20px;
     margin-left: 200px;
-    padding-top: 50px;
-    padding-left: 0;
-    padding-right: 0;
-    padding-bottom: 0;
 }
 
 @media (max-width: 767px) {
@@ -16,6 +13,7 @@
 }
 
 .dl-sidebar-collapsed-content {
+    padding: 50px 0 0 0;
     margin-left: 0;
 }
 
@@ -23,20 +21,16 @@
     position: relative;
     border-bottom: 1px solid #eeeeee;
     padding-left: 40px;
-    height: 110px;
+    height: 70px;
 }
 
 .dl-content-header h1 {
     font-size: 24px;
-    position: absolute;
-    top: 50px;
     color: #4d5761;
 }
 
 .dl-content-header small {
     font-size: 12px;
-    position: absolute;
-    top: 86px;
     color: #7c868d;
 }
 
@@ -58,8 +52,8 @@
 }
 
 .dl-pre {
-    background-color: #333;
-    color: #fff;
+    color: #333;
+    background-color: #f2f2f2;
     font-size: 12px;
     line-height: 1.5;
     padding: 10px;

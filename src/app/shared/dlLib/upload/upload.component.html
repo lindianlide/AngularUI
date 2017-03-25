@@ -1,0 +1,10 @@
+<div *ngIf="buttonType === 'image'" class="file-area ">{{fileName}}</div>
+<div *ngIf="buttonType !== 'image'" class="file-area file-area-font">{{fileName}}</div>
+<div *ngIf="buttonType === 'image'" class="file-button">
+    image
+    <input class="file-cover" type="file" name="file" (change)="fileChange($event,i)">
+</div>
+<div *ngIf="buttonType !== 'image'" class="file-button file-button-font">
+    <span>上传文件</span>
+    <input class="file-cover file-button-font" type="file" name="file" (change)="fileChange($event,i)">
+</div>

@@ -1,0 +1,31 @@
+<section class="dl-content-header">
+  <h1>步骤条-Wizard</h1>
+  <small>步骤</small>
+</section>
+
+<section class="dl-content">
+
+  <h2>步骤条</h2>
+
+  <dl-wizard [steps]="createSteps" (submit)="submitCreateInstance()">
+      <dl-wizard-step [current]="true">
+          1
+      </dl-wizard-step>
+      <dl-wizard-step>
+          2
+      </dl-wizard-step>
+      <dl-wizard-step>
+          3
+      </dl-wizard-step>
+  </dl-wizard>
+
+  <div class="h-20"></div>
+  <pre class="dl-pre">
+    <code>
+      {{wizardCode}}
+    </code>
+  </pre>
+ 配置参数：
+  (next)="next($event)" (prev)="prev($event)" (submit)="submitCreateInstance()" (cancel)="cancel()"
+  
+</section>

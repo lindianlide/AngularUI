@@ -1,0 +1,45 @@
+.file-area {
+  height: 36px;
+  display: inline-block;
+  line-height: 34px;
+  width: 352px;
+  padding: 0 10px;
+  border: 1px solid #dddddd;
+  outline: none;
+  box-shadow: none;
+  border-top-left-radius: 2px;
+  border-bottom-left-radius: 2px;
+}
+
+.file-area-font {
+  width: 322px !important;
+}
+
+.file-button {
+  cursor: pointer;
+  text-align: center;
+  position: absolute;
+  width: 48px;
+  height: 36px;
+  display: inline-block;
+  line-height: 34px;
+  border: 1px solid #dddddd;
+  margin-left: -1px;
+  border-top-right-radius: 2px;
+  border-bottom-right-radius: 2px;
+}
+
+.file-cover {
+  cursor: pointer;
+  position: absolute;
+  width: 48px;
+  height: 36px;
+  display: inline-block;
+  margin-top: -35px;
+  opacity: 0;
+}
+
+.file-button-font {
+  width: 78px !important;
+}
+

@@ -4,7 +4,7 @@ import { DemoComponent } from './demo.component';
 import { ButtonComponent } from './button/button.component';
 import { InputComponent } from './input/input.component';
 import { WizardComponent } from './wizard/wizard.component';
-
+import { BreadcrumbComponent } from './breadcrumb/breadcrumb.component';
 export const DemoRoutes = [
 {
     path: '',
@@ -25,6 +25,10 @@ export const DemoRoutes = [
       {
         path: 'wizard',
         component: WizardComponent
+      },
+      {
+        path: 'breadcrumb',
+        component: BreadcrumbComponent
       }
     ]
   }

@@ -1,26 +1,27 @@
-.breadcrumb {
+.dl-breadcrumb {
     padding: 14px 0 0 0;
     background: none;
     margin: 0;
     border: none;
     border-radius: 0;
+    display: inline-block;
 }
 
-.breadcrumb > li + li:before {
-    padding-left: 10px;
-    padding-right: 10px;
+.dl-breadcrumb > li + li:before {
+    padding-left: 6px;
     content: "/";
     color: #ddd;
 }
 
-.breadcrumb > li {
+.dl-breadcrumb > li {
     color: #7c868d;
     font-size: 12px;
+    display: inline-block;
 }
 
-.breadcrumb a,
-.breadcrumb a:hover,
-.breadcrumb a:focus {
+.dl-breadcrumb a,
+.dl-breadcrumb a:hover,
+.dl-breadcrumb a:focus {
     color: #3fb4ff;
     font-size: 12px;
 }

@@ -6,13 +6,15 @@ import { DemoRoutes } from './demo.routes';
 import { ButtonComponent } from './button/button.component';
 import { InputComponent } from './input/input.component';
 import { WizardComponent } from './wizard/wizard.component';
+import { BreadcrumbComponent } from './breadcrumb/breadcrumb.component';
 
 @NgModule({
   declarations: [
     DemoComponent,
     ButtonComponent,
     InputComponent,
-    WizardComponent
+    WizardComponent,
+    BreadcrumbComponent
     
   ],
   imports: [

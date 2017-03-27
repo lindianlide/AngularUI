@@ -5,6 +5,7 @@ import { InputModule } from './input/input.module'
 import { ButtonModule } from './button/button.module'
 import { WizardModule } from './wizard/wizard.module'
 import { UploadModule } from './upload/upload.module'
+import { BreadcrumbModule } from './breadcrumb/breadcrumb.module';
 
 const module = [
   NavbarModule,
@@ -12,7 +13,8 @@ const module = [
   InputModule,
   ButtonModule,
   WizardModule,
-  UploadModule
+  UploadModule,
+  BreadcrumbModule
 ];
 
 @NgModule({

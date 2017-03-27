@@ -1,0 +1,6 @@
+<ol class="dl-breadcrumb">
+    <li *ngFor="let link of links" class="dl-breadcrumb-item" [class.active]="link.active">
+        <a *ngIf="!link.active" role="button" (click)="toUrl(link.url)">{{link.text}}</a>
+        <span *ngIf="link.active">{{link.text}}</span>
+    </li>
+</ol>

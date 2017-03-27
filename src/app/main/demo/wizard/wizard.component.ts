@@ -27,4 +27,8 @@ export class WizardComponent {
   </dl-wizard>`;
 
   }
+  
+  submit(){
+    console.log('submit');
+  }
 }

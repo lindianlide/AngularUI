@@ -13,7 +13,7 @@ module.exports = {
     entry: {
         'polyfills': './src/polyfills.ts',
         'vendor': './src/vendor.ts',
-        'main': './src/main.ts'
+        'main': './src/main-aot.ts'
     },
 
     resolve: {
@@ -27,6 +27,7 @@ module.exports = {
                 test: /\.ts$/,
                 //loader: 'happypack/loader?id=ts'
                 exclude: /node_modules/,
+                //加angular2-webpack2-lazy-children-loader’替换angular2-router-loader会自动为aot异步加载时添加后缀ngfactory
                 loaders: ['awesome-typescript-loader', 'angular2-template-loader', 'angular2-router-loader']
             },
             {

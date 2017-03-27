@@ -6,11 +6,13 @@
     "start": "webpack-dev-server --config config/webpack.dev.js --inline --progress --port 4200 --host 0.0.0.0 --content-base src",
     "test": "karma start",
     "build": "rimraf dist && webpack --config config/webpack.prod.js --progress --profile --bail",
+    "build:aot": "ngc -p tsconfig-aot.json",
     "mock": "node mock/server.js"
   },
   "dependencies": {
     "@angular/common": ">=4.0.0",
     "@angular/compiler": ">=4.0.0",
+    "@angular/compiler-cli": ">=4.0.0",
     "@angular/core": ">=4.0.0",
     "@angular/forms": ">=4.0.0",
     "@angular/http": ">=4.0.0",

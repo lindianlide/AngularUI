@@ -1,0 +1,40 @@
+{
+  "compilerOptions": {
+    "target": "es5",
+    "module": "es2015",
+    "outDir": "dist",
+    "rootDir": ".",
+    "sourceMap": true,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "moduleResolution": "node",
+    "typeRoots": [
+      "node_modules/@types"
+    ],
+    "lib": ["es2015", "dom"],
+    "noImplicitAny": true,
+    "suppressImplicitAnyIndexErrors": true
+  },
+  "exclude": [
+    "node_modules"
+  ],
+
+  //不加貌似也能编译，从app.module.ts这个文件开始进行编译。
+  "files":[
+    //从app.module.ts这个文件开始进行编译。
+    "src/app.module.ts",
+    //这是lazy loader模块，因为是惰性加载模块，而没有在原模块中import或require它，所以需要单独编译。
+    "src/app/main/demo/demo.module.ts"
+  ],
+  "awesomeTypescriptLoaderOptions": {
+    "useWebpackText": true
+  },
+  "compileOnSave": false,
+  "buildOnSave": false,
+  "atom": { "rewriteTsconfig": false },
+  "angularCompilerOptions": {
+    "genDir": "aot",
+    "skipMetadataEmit" : true,
+    "debug": false
+ }
+}

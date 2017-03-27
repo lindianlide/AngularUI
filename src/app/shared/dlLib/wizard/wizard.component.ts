@@ -61,11 +61,11 @@ export class WizardComponent {
         //this.selectTab(0);
     };
 
-    selectTab(tabNum) {
+    selectTab(tabNum:any) {
         //this.tabs[this.tabNum].submit();
         if (this.tabs[tabNum].isAvailiable()) {
             this.tabNum = tabNum;
-            this.tabs.forEach(function (t, tIndex) {
+            this.tabs.forEach(function (t:any, tIndex:any) {
                 tIndex == this.tabNum ? t.select(true) : t.select(false);
             });
         }
@@ -121,7 +121,7 @@ export class WizardComponent {
         this.cancel.emit(false);
     }
 
-    select(isSelected) {
+    select(isSelected:any) {
         if (isSelected) {
             //$scope.selected = true;
         } else {

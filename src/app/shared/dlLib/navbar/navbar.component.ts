@@ -1,5 +1,5 @@
 import { Component, Output, EventEmitter } from '@angular/core';
-
+import { GlobalState } from '../../../global.state';
 @Component({
   selector: 'dl-navbar',
   templateUrl: './navbar.component.html'
@@ -7,17 +7,19 @@ import { Component, Output, EventEmitter } from '@angular/core';
 
 export class NavbarComponent {
 
-  @Output() collapse = new EventEmitter();
   @Output() switchSidebar = new EventEmitter();
-  switchValue:string = 'home';
-  isCollapsed:boolean = false;
+  switchValue: string = 'home';
+  isCollapsed: boolean = false;
 
-  collapseSidebar(e:any) {
-    this.isCollapsed = !this.isCollapsed;
-    this.collapse.emit(this.isCollapsed);
+  constructor(private globalState: GlobalState) {
   }
 
-  switch(value:string) {
+  collapseSidebar(e: any) {
+    this.isCollapsed = !this.isCollapsed;
+    this.globalState.notifyDataChanged('isCollapsed', this.isCollapsed);
+  }
+
+  switch(value: string) {
     this.switchValue = value;
     this.switchSidebar.emit(value);
   }

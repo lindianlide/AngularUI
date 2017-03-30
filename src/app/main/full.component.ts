@@ -1,18 +1,21 @@
 import { Component } from '@angular/core';
+import { GlobalState } from '../global.state';
 
 @Component({
   templateUrl: './full.component.html'
 })
 
 export class FullComponent {
-  isCollapsed:boolean = false;
-  switchSidebar:string = 'home';
+  isCollapsed: boolean = false;
+  switchSidebar: string = 'home';
 
-  collapse(e:any) {
-    this.isCollapsed = e;
+  constructor(private globalState: GlobalState) {
+    this.globalState.subscribe('isCollapsed', collapsed => {
+      this.isCollapsed = collapsed;
+    });
   }
 
-  switch(e:any) {
+  switch(e: any) {
     this.switchSidebar = e;
   }
 }

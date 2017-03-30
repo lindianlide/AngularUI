@@ -1,4 +1,5 @@
 import { Component, Input } from '@angular/core';
+import { GlobalState } from '../../../../global.state';
 
 @Component({
   selector: 'dl-sidebar-static',
@@ -6,8 +7,14 @@ import { Component, Input } from '@angular/core';
 })
 
 export class SidebarStaticComponent {
-  isVisible:boolean = false;
+  isVisible: boolean = false;
 
-  @Input() isCollapsed:boolean;
-  @Input() switchSidebar:string;
+  isCollapsed: boolean = false;
+  @Input() switchSidebar: string;
+
+  constructor(private globalState: GlobalState) {
+    this.globalState.subscribe('isCollapsed', collapsed => {
+      this.isCollapsed = collapsed;
+    });
+  }
 }

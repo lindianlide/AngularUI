@@ -1,3 +1,7 @@
+
+// RxJS
+import 'rxjs';
+
 import '../public/css/font-awesome.min.css';
 
 import '../public/css/dl-styles.css';

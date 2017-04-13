@@ -7,6 +7,7 @@ import { ButtonComponent } from './button/button.component';
 import { InputComponent } from './input/input.component';
 import { WizardComponent } from './wizard/wizard.component';
 import { BreadcrumbComponent } from './breadcrumb/breadcrumb.component';
+import { NoticeComponent } from './notice/notice.component';
 
 @NgModule({
   declarations: [
@@ -14,8 +15,8 @@ import { BreadcrumbComponent } from './breadcrumb/breadcrumb.component';
     ButtonComponent,
     InputComponent,
     WizardComponent,
-    BreadcrumbComponent
-    
+    BreadcrumbComponent,
+    NoticeComponent
   ],
   imports: [
     SharedModule,

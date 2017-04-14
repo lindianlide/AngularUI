@@ -6,16 +6,20 @@ import { Component } from '@angular/core';
 
 export class NoticeComponent {
   successCode: string;
-  alarmCode: string;
-  attentionCode: string;
+  warningCode: string;
+  errorCode: string;
+  successShow: boolean = false;
+  warningShow: boolean = false;
+  errorShow: boolean = false;
+
   constructor() {
     this.successCode = `
-      <dl-notice [classType]="'success'"></dl-notice>`;
+        <dl-notice [classType]="'success'" [(show)]="successShow"></dl-notice>`;
 
-    this.alarmCode = `
-       <dl-notice [classType]="'alarm'"></dl-notice>`;
+    this.warningCode = `
+       <dl-notice [classType]="'warning'" [(show)]="warningShow"></dl-notice>`;
 
-    this.attentionCode = `
-       <dl-notice [classType]="'attention'"></dl-notice>`;
+    this.errorCode = `
+       <dl-notice [classType]="'error'" [(show)]="errorShow"></dl-notice>`;
   }
 }

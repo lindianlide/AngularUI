@@ -21,7 +21,7 @@ var webpackProConfig = {
 
     output: {
 
-        publicPath: '/',
+        publicPath: '/assets/',
 
         path: helpers.root('dist'),
 

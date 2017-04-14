@@ -19,11 +19,11 @@
     background-color: #73cf22;
 }
 
-.dl-alert-attention {
+.dl-alert-warning {
     background-color: #f7c515;
 }
 
-.dl-alert-alarm {
+.dl-alert-error {
     background-color: #ff625d;
 }
 
@@ -33,10 +33,10 @@
     right: 10px;
     width: 15px;
     height: 15px;
-    background-image: url("../../../public/images/alert_btn_close.png");
+    background-image: url("../../images/alert_btn_close.png");
 }
 
 .dl-alert-close:hover,
 .dl-alert-close:focus {
-    background-image: url("../../../public/images/alert_btn_close_hover.png");
+    background-image: url("../../images/alert_btn_close_hover.png");
 }

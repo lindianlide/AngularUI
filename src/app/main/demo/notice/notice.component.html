@@ -1,14 +1,16 @@
 <section class="dl-content-header">
   <h1>通知-Notice</h1>
-  <small>通知通常成功、告警、错误四种场景，一般在顶部导航之下，页面之上。</small>
+  <small>通知通常分为成功、警告、错误三种场景，一般在顶部导航之下，页面之上。</small>
 </section>
 
 <section class="dl-content">
 
   <h2>场景一：成功通知</h2>
   <p>成功通知3秒后自动消失</p>
-  <dl-button [classType]="'primary'">打开成功通知</dl-button>
-  <dl-notice [classType]="'success'"></dl-notice>
+  <dl-button [classType]="'primary'" (click)="successShow=!successShow">打开成功通知</dl-button>
+  <dl-notice [classType]="'success'" [(show)]="successShow">
+    您的操作已经成功。3s后此提示自动消失。
+  </dl-notice>
   <div class="h-20"></div>
   <pre class="dl-pre">
     <code>
@@ -16,23 +18,27 @@
     </code>
   </pre>
 
-  <h2>场景二：告警通知</h2>
-  <dl-button [classType]="'primary'">打开成功通知</dl-button>
-  <dl-notice [classType]="'alarm'"></dl-notice>
+  <h2>场景二：警告通知</h2>
+  <dl-button [classType]="'primary'" (click)="warningShow=!warningShow">打开警告通知</dl-button>
+  <dl-notice [classType]="'warning'" [(show)]="warningShow">
+    <b>警告！</b>系统存在安全风险，请进行检测。
+  </dl-notice>
   <div class="h-20"></div>
   <pre class="dl-pre">
     <code>
-        {{alarmCode}}
+        {{warningCode}}
     </code>
   </pre>
 
-  <h2>场景三：警告通知</h2>
-  <dl-button [classType]="'primary'">打开成功通知</dl-button>
-  <dl-notice [classType]="'attention'"></dl-notice>
+  <h2>场景三：错误通知</h2>
+  <dl-button [classType]="'primary'" (click)="errorShow=!errorShow">打开错误通知</dl-button>
+  <dl-notice [classType]="'error'" [(show)]="errorShow">
+    <b>错误！</b>操作失败，请联系管理员。
+  </dl-notice>
   <div class="h-20"></div>
   <pre class="dl-pre">
     <code>
-        {{attentionCode}}
+        {{errorCode}}
     </code>
   </pre>
 

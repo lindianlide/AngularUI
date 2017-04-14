@@ -1,25 +1,4 @@
-<!--
-<button type="type"
-        [ngClass]="setClass()"
-        [disabled]="disabled">
-  <i *ngIf="i" [ngClass]="setIClass()"></i>
+<div [ngClass]="setClass()" *ngIf="_show">
+  <a role="button" class="dl-alert-close" *ngIf="closeButton" (click)="_show = false"></a>
   <ng-content></ng-content>
-</button>
--->
-<div [ngClass]="setClass()">
-  您的操作已经成功。3s后此提示自动消失。
 </div>
-<!--
-
-<div class="px-alert px-alert-success" *ngIf="isShowSuccess">
-  您的操作已经成功。3s后此提示自动消失。
-</div>
-
-<div class="px-alert px-alert-attention" *ngIf="isShowAttention">
-  <a role="button" class="px-alert-close" (click)="isShowAttention = false"></a>
-  <b>警告！</b>系统存在安全风险，请进行检测。
-</div>
-<div class="px-alert px-alert-alarm" *ngIf="isShowAlarm">
-  <a role="button" class="px-alert-close" (click)="isShowAlarm = false"></a>
-  <b>错误！</b>操作失败，请联系管理员。
-</div>-->

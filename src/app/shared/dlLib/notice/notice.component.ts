@@ -9,16 +9,24 @@ export class NoticeComponent {
 
   @Input() classType: string;
 
-  isShowSuccess: boolean = false;
-  isShowAttention: boolean = false;
-  isShowAlarm: boolean = false;
-
-  showSuccess() {
-    this.isShowSuccess = true;
-    setTimeout(() => {
-      this.isShowSuccess = false;
-    }, 3000);
+  @Input()
+  get show(): boolean {
+    return this._show;
   }
+
+  set show(isShow: boolean) {
+    if (this.classType === 'success' && isShow) {
+      this._show = true;
+      this.closeButton = false;
+      setTimeout(() => this._show = false, 3000);
+    } else {
+      this._show = isShow;
+      this.closeButton = true;
+    }
+  }
+
+  _show: boolean = true;
+  closeButton: boolean = true;
 
   setClass() {
     return 'dl-alert dl-alert-' + this.classType;

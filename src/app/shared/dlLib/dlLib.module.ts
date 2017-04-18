@@ -7,6 +7,7 @@ import { WizardModule } from './wizard/wizard.module';
 import { UploadModule } from './upload/upload.module';
 import { BreadcrumbModule } from './breadcrumb/breadcrumb.module';
 import { NoticeModule } from './notice/notice.module';
+import { ModalModule } from './modal/modal.module';
 
 const module = [
   NavbarModule,
@@ -16,7 +17,8 @@ const module = [
   WizardModule,
   UploadModule,
   BreadcrumbModule,
-  NoticeModule
+  NoticeModule,
+  ModalModule
 ];
 
 @NgModule({

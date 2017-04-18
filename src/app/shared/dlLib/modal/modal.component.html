@@ -1,0 +1,39 @@
+<div class="dl-modal-backdrop" [hidden]="!open">
+  <div class="dl-modal-dialog" [ngStyle]="setStyles">
+    <div class="dl-modal-content">
+      <div *ngIf="showDefaultHeader" class="dl-modal-header">
+        <!--<div class="close" (click)="closeModal()">-->
+        <!--<span>&times;</span>-->
+        <div class="dl-modal-header-close" (click)="closeModal()"></div>
+        <!--  </div>-->
+        <span class="dl-modal-title">{{title}}</span>
+
+      </div>
+      <div *ngIf="type === 'exclamation'">
+        <div class="dl-modal-body">
+          <div class="img-exclamation"></div>
+          <h5>{{message}}</h5>
+          <small>{{messageDown}}</small>
+        </div>
+        <div class="dl-modal-footer-alert">
+          <!--<button class="dl-delete-button btn-default dl-modal-button-right" (click)="submitModal()">删除</button>-->
+          <!-- <button class="dl-cancel-button btn-default"  (click)="closeModal()">取消</button>-->
+          <dl-button class="dl-modal-button-right" [type]="'warning'"
+                     (click)="submitModal()">{{warnConfirm}}</dl-button>
+          <dl-button [type]="'cancel'" (click)="closeModal()">{{warnCancel}}</dl-button>
+        </div>
+      </div>
+
+      <ng-content></ng-content>
+      <div *ngIf="type !== 'exclamation'">
+        <div *ngIf="showDefaultFooter" class="dl-modal-footer">
+          <!--<button class="dl-confirm-button btn-default dl-modal-button-right" (click)="submitModal()">确认</button>-->
+          <!--<button class="dl-cancel-button btn-default"  (click)="closeModal()">取消</button>-->
+          <dl-button class="dl-modal-button-right" [type]="'primary'"
+                     (click)="submitModal()">确认</dl-button>
+          <dl-button [type]="'cancel'" (click)="closeModal()">取消</dl-button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

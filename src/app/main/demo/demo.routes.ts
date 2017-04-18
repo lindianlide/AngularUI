@@ -3,6 +3,7 @@ import { InputComponent } from './input/input.component';
 import { WizardComponent } from './wizard/wizard.component';
 import { BreadcrumbComponent } from './breadcrumb/breadcrumb.component';
 import { NoticeComponent } from './notice/notice.component';
+import { ModalComponent } from './modal/modal.component';
 
 export const DemoRoutes = [
   {
@@ -32,6 +33,10 @@ export const DemoRoutes = [
       {
         path: 'notice',
         component: NoticeComponent
+      },
+      {
+        path: 'modal',
+        component: ModalComponent
       }
     ]
   }

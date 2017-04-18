@@ -19,7 +19,7 @@ export const FullRoutes = [
       },
       {
         path: 'components',
-        loadChildren:'./demo/demo.module#DemoModule'
+        loadChildren: './demo/demo.module#DemoModule'
         //loadChildren:'./demo/demo.module.ngfactory#ModuleNgFactory'
       }
     ]

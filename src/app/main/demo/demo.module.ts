@@ -9,6 +9,7 @@ import { WizardComponent } from './wizard/wizard.component';
 import { BreadcrumbComponent } from './breadcrumb/breadcrumb.component';
 import { NoticeComponent } from './notice/notice.component';
 import { ModalComponent } from './modal/modal.component';
+import { ProgressComponent } from './progress/progress.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { ModalComponent } from './modal/modal.component';
     WizardComponent,
     BreadcrumbComponent,
     NoticeComponent,
-    ModalComponent
+    ModalComponent,
+    ProgressComponent
   ],
   imports: [
     SharedModule,

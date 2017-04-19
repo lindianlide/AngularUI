@@ -4,6 +4,7 @@ import { WizardComponent } from './wizard/wizard.component';
 import { BreadcrumbComponent } from './breadcrumb/breadcrumb.component';
 import { NoticeComponent } from './notice/notice.component';
 import { ModalComponent } from './modal/modal.component';
+import { ProgressComponent } from './progress/progress.component';
 
 export const DemoRoutes = [
   {
@@ -37,6 +38,10 @@ export const DemoRoutes = [
       {
         path: 'modal',
         component: ModalComponent
+      },
+      {
+        path: 'progress',
+        component: ProgressComponent
       }
     ]
   }

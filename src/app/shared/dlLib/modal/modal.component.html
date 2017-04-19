@@ -18,9 +18,9 @@
         <div class="dl-modal-footer-alert">
           <!--<button class="dl-delete-button btn-default dl-modal-button-right" (click)="submitModal()">删除</button>-->
           <!-- <button class="dl-cancel-button btn-default"  (click)="closeModal()">取消</button>-->
-          <dl-button class="dl-modal-button-right" [type]="'warning'"
+          <dl-button class="dl-modal-button-right" [classType]="'warning'"
                      (click)="submitModal()">{{warnConfirm}}</dl-button>
-          <dl-button [type]="'cancel'" (click)="closeModal()">{{warnCancel}}</dl-button>
+          <dl-button [classType]="'cancel'" (click)="closeModal()">{{warnCancel}}</dl-button>
         </div>
       </div>
 
@@ -29,9 +29,9 @@
         <div *ngIf="showDefaultFooter" class="dl-modal-footer">
           <!--<button class="dl-confirm-button btn-default dl-modal-button-right" (click)="submitModal()">确认</button>-->
           <!--<button class="dl-cancel-button btn-default"  (click)="closeModal()">取消</button>-->
-          <dl-button class="dl-modal-button-right" [type]="'primary'"
+          <dl-button class="dl-modal-button-right" [classType]="'primary'"
                      (click)="submitModal()">确认</dl-button>
-          <dl-button [type]="'cancel'" (click)="closeModal()">取消</dl-button>
+          <dl-button [classType]="'cancel'" (click)="closeModal()">取消</dl-button>
         </div>
       </div>
     </div>

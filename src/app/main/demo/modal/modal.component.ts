@@ -10,8 +10,8 @@ export class ModalComponent {
 
   style: any = {'width': '600px'};
   demoModalHtml1: string = `
-     <px-modal #modal1 [title]="'title1'" [setStyles]="style" (submit)="submitModal1()">
-            <div class="px-modal-body">
+     <dl-modal #modal1 [title]="'title1'" [setStyles]="style" (submit)="submitModal1()">
+            <div class="dl-modal-body">
                 <div class="form-group">
                     用户：<input type="text" name="input1">
               </div>
@@ -19,9 +19,9 @@ export class ModalComponent {
                     密码：<input type="text" name="input2">
                 </div>
             </div>
-        </px-modal>
+        </dl-modal>
 
-        <px-button [type]="'confirm'" (click)="openModal1()" [disabled]=0>默认按钮弹框</px-button>
+        <dl-button [type]="'confirm'" (click)="openModal1()" [disabled]=0>默认按钮弹框</dl-button>
     `;
   demoModalTs1: string = `
         @ViewChild('modal1') modal1:any;
@@ -35,8 +35,8 @@ export class ModalComponent {
         }
     `;
   demoModalHtml2: string = `
-     <px-modal #modal1 [title]="'title1'" [showDefaultFooter]="false">
-            <div class="px-modal-body">
+     <dl-modal #modal1 [title]="'title1'" [showDefaultFooter]="false">
+            <div class="dl-modal-body">
                 <div class="form-group">
                     用户：<input type="text" name="input1">
               </div>
@@ -44,13 +44,13 @@ export class ModalComponent {
                     密码：<input type="text" name="input2">
                 </div>
             </div>
-             <div class="px-modal-footer">
-                <px-button [type]="'confirm'" (click)="submitModal2()">提交</px-button>
-                <px-button [type]="'cancel'" (click)="closeModal2()">取消</px-button>
+             <div class="dl-modal-footer">
+                <dl-button [type]="'confirm'" (click)="submitModal2()">提交</dl-button>
+                <dl-button [type]="'cancel'" (click)="closeModal2()">取消</dl-button>
             </div>
-        </px-modal>
+        </dl-modal>
 
-        <px-button [type]="'confirm'" (click)="openModal2()" [disabled]=0>自定义按钮弹框</px-button>
+        <dl-button [type]="'confirm'" (click)="openModal2()" [disabled]=0>自定义按钮弹框</dl-button>
     `;
   demoModalTs2: string = `
         @ViewChild('modal2') modal2:any;
@@ -67,10 +67,10 @@ export class ModalComponent {
     `;
 
   demoModalHtml3: string = `
-      <px-modal #modal3 [title]="'删除'" [type]="'exclamation'" [message]="'确认要删除选中项吗？'" [messageDown]="'删除选中项可能导致服务不可用。'" (submit)="submitModal3()">
-      </px-modal>
+      <dl-modal #modal3 [title]="'删除'" [type]="'exclamation'" [message]="'确认要删除选中项吗？'" [messageDown]="'删除选中项可能导致服务不可用。'" (submit)="submitModal3()">
+      </dl-modal>
 
-      <px-button [type]="'danger'" (click)="openModal3()" [disabled]=0>删除警告弹框</px-button>
+      <dl-button [type]="'danger'" (click)="openModal3()" [disabled]=0>删除警告弹框</dl-button>
     `;
   demoModalTs3: string = `
         @ViewChild('modal3') modal3:any;

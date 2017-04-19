@@ -7,10 +7,10 @@ import { Component, Input } from '@angular/core';
 
 export class ButtonComponent {
 
-  @Input() classType:string;
-  @Input() i:string;
-  @Input() disabled:boolean;
-  @Input() type:string;
+  @Input() classType: string;
+  @Input() i: string;
+  @Input() disabled: boolean;
+  @Input() type: string;
 
   constructor() {
     this.type = 'button';

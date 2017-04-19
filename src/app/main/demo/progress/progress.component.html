@@ -1,0 +1,59 @@
+<section class="dl-content-header">
+  <h1>进度条-Progress</h1>
+  <small> 当操作时间较长时用于给用户呈现进度，提供了两种尺寸，三种状态：默认状态、异常、成功。
+  </small>
+</section>
+
+<section class="dl-content">
+
+  <h2>场景一：进度条</h2>
+
+  <dl-progress [percentage]="infoPercent" [type]="'lg'" [bartype]="'info'"></dl-progress>
+  <dl-progress [percentage]="'100'" [type]="'sm'" [bartype]="'success'"></dl-progress>
+  <div class="h-20"></div>
+  <dl-progress [percentage]="'50'" [type]="'lg'" [bartype]="'warning'"></dl-progress>
+  <dl-progress [percentage]="'50'" [type]="'sm'" [bartype]="'warning'"></dl-progress>
+
+  <div class="h-20"></div>
+  <pre class="dl-pre">
+    <code>
+      {{progressCode}}
+    </code>
+  </pre>
+
+ <!-- <section>
+    <h2>配置项参数</h2>
+    <table class="demo">
+      <thead>
+      <tr>
+        <th width="20%">属性</th>
+        <th width="10%">类型</th>
+        <th width="10%">缺省值</th>
+        <th width="60%">描述</th>
+      </tr>
+      </thead>
+      <tbody>
+      <tr>
+        <td>percentage</td>
+        <td>数字</td>
+        <td>0</td>
+        <td>百分比</td>
+      </tr>
+      <tr>
+        <td>type</td>
+        <td>字符串</td>
+        <td>page</td>
+        <td>场景类型:长 或 短</td>
+      </tr>
+      <tr>
+        <td>bartype</td>
+        <td>字符串</td>
+        <td>info</td>
+        <td>进度条类型:info 或 warning</td>
+      </tr>
+      </tbody>
+    </table>
+  </section>
+-->
+</section>
+

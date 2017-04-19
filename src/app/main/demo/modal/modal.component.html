@@ -1,6 +1,6 @@
 <section class="dl-content-header">
   <h1>弹出框-Modal</h1>
-  <small>弹出框通常分为：</small>
+  <small>弹出框提供了三种场景：默认按钮弹框，自定义按钮弹框，及删除警告弹框</small>
 </section>
 
 <section class="dl-content">
@@ -12,10 +12,12 @@
   <dl-modal #modal1 [title]="'title1'" [setStyles]="style" (submit)="submitModal1()">
     <div class="dl-modal-body">
       <div class="form-group">
-        用户：<input type="text" name="input1">
+        用户：
+        <dl-input [classType]="'lg'"></dl-input>
       </div>
       <div class="form-group">
-        密码：<input type="text" name="input2">
+        密码：
+        <dl-input [classType]="'lg'"></dl-input>
       </div>
     </div>
   </dl-modal>
@@ -35,10 +37,12 @@
   <dl-modal #modal2 [title]="'title1'" [setStyles]="style" [showDefaultFooter]="false">
     <div class="dl-modal-body">
       <div class="form-group">
-        用户：<input type="text" name="input1">
+        用户：
+        <dl-input [classType]="'lg'"></dl-input>
       </div>
       <div class="form-group">
-        密码：<input type="text" name="input2">
+        密码：
+        <dl-input [classType]="'lg'"></dl-input>
       </div>
     </div>
 

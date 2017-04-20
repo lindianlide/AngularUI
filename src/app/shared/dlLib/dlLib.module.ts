@@ -9,6 +9,7 @@ import { BreadcrumbModule } from './breadcrumb/breadcrumb.module';
 import { NoticeModule } from './notice/notice.module';
 import { ModalModule } from './modal/modal.module';
 import { ProgressModule } from './progress/progress.module';
+import { LoadingModule } from './loading/loading.module';
 
 const module = [
   NavbarModule,
@@ -20,7 +21,8 @@ const module = [
   BreadcrumbModule,
   NoticeModule,
   ModalModule,
-  ProgressModule
+  ProgressModule,
+  LoadingModule
 ];
 
 @NgModule({

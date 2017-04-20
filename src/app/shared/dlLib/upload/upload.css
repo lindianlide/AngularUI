@@ -29,6 +29,10 @@
   border-bottom-right-radius: 2px;
 }
 
+.file-button i {
+  vertical-align: middle;
+}
+
 .file-cover {
   cursor: pointer;
   position: absolute;

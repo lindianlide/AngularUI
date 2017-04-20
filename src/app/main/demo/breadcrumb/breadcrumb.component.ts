@@ -6,7 +6,7 @@ import { Component } from '@angular/core';
 })
 
 export class BreadcrumbComponent {
-  links:any[] = [
+  links: any[] = [
     {
       active: false,
       text: 'input',
@@ -22,4 +22,6 @@ export class BreadcrumbComponent {
       text: 'breadcrumb'
     }
   ];
+  breadcrumbCode: string = `
+   <dl-breadcrumb [links]="links"></dl-breadcrumb>`;
 }

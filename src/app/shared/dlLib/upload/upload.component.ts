@@ -8,17 +8,17 @@ import { Component, ElementRef, Input, Output, EventEmitter } from '@angular/cor
 
 export class UploadComponent {
 
-  fileName:string = '';
-    @Input() buttonType:string = 'font';
-    @Output() fileReader = new EventEmitter<any>();
+  fileName: string = '';
+  @Input() buttonType: string = '上传';
+  @Output() fileReader = new EventEmitter<any>();
 
-    constructor(private _elementRef:ElementRef) {
+  constructor(private _elementRef: ElementRef) {
 
-    }
+  }
 
-    fileChange($event:any, index:any) {
-        let file = $event.target;
-        this.fileName = file.files[0].name;
-        this.fileReader.emit(file);
-    }
+  fileChange($event: any, index: any) {
+    let file = $event.target;
+    this.fileName = file.files[0].name;
+    this.fileReader.emit(file);
+  }
 }

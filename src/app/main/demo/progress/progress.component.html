@@ -6,7 +6,7 @@
 
 <section class="dl-content">
 
-  <h2>场景一：进度条</h2>
+  <h2>场景一：动态进度条</h2>
 
   <dl-progress [percentage]="infoPercent" [type]="'lg'" [bartype]="'info'"></dl-progress>
   <dl-progress [percentage]="'100'" [type]="'sm'" [bartype]="'success'"></dl-progress>
@@ -20,7 +20,18 @@
       {{progressCode}}
     </code>
   </pre>
+  <h2>场景二：等待进度条</h2>
 
+  <dl-loading [type]="'max'"></dl-loading>
+  <dl-loading [type]="'medium'"></dl-loading>
+  <dl-loading [type]="'min'"></dl-loading>
+
+  <div class="h-20"></div>
+  <pre class="dl-pre">
+    <code>
+        {{loadingCode}}
+    </code>
+  </pre>
  <!-- <section>
     <h2>配置项参数</h2>
     <table class="demo">

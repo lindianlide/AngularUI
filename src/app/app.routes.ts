@@ -1,7 +1,6 @@
-import { RouterModule } from '@angular/router';
-import { AppComponent } from './app.component';
+import { Routes } from '@angular/router';
 
-export const AppRoutes=[
+export const AppRoutes:Routes =[
   {
     path: '',
     redirectTo: 'main',

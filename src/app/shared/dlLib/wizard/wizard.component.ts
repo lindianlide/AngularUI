@@ -2,7 +2,7 @@ import { Component, ElementRef, Input, ViewChild, Output, EventEmitter } from '@
 
 @Component({
     selector: 'dl-wizard',
-    styleUrls: ['./wizard.scss'],
+    styleUrls: ['./wizard.css'],
     templateUrl: './wizard.component.html'
 
 })

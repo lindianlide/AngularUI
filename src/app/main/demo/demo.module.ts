@@ -10,6 +10,7 @@ import { BreadcrumbComponent } from './breadcrumb/breadcrumb.component';
 import { NoticeComponent } from './notice/notice.component';
 import { ModalComponent } from './modal/modal.component';
 import { ProgressComponent } from './progress/progress.component';
+import { TreeComponent } from './tree/tree.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { ProgressComponent } from './progress/progress.component';
     BreadcrumbComponent,
     NoticeComponent,
     ModalComponent,
-    ProgressComponent
+    ProgressComponent,
+    TreeComponent
   ],
   imports: [
     SharedModule,

@@ -10,6 +10,7 @@ import { NoticeModule } from './notice/notice.module';
 import { ModalModule } from './modal/modal.module';
 import { ProgressModule } from './progress/progress.module';
 import { LoadingModule } from './loading/loading.module';
+import { DlTreeModule } from './tree/tree.module';
 
 const module = [
   NavbarModule,
@@ -22,7 +23,8 @@ const module = [
   NoticeModule,
   ModalModule,
   ProgressModule,
-  LoadingModule
+  LoadingModule,
+  DlTreeModule
 ];
 
 @NgModule({

@@ -2,7 +2,7 @@ import { Component, ElementRef, Input } from '@angular/core';
 
 @Component({
     selector: 'dl-wizard-step',
-    styleUrls: ['./wizard.scss'],
+    styleUrls: ['./wizard.css'],
     templateUrl: './wizardStep.component.html'
 
 })

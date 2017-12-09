@@ -1,9 +1,8 @@
-import { NgModule } from '@angular/core';
-import { RouterModule, Routes } from '@angular/router';
+import { Routes } from '@angular/router';
 import { FullComponent } from './full.component';
 import { HomeComponent } from './home/home.component';
 
-export const FullRoutes = [
+export const FullRoutes:Routes = [
   {
     path: 'main',
     component: FullComponent,

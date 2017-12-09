@@ -5,6 +5,7 @@ import { BreadcrumbComponent } from './breadcrumb/breadcrumb.component';
 import { NoticeComponent } from './notice/notice.component';
 import { ModalComponent } from './modal/modal.component';
 import { ProgressComponent } from './progress/progress.component';
+import { TreeComponent } from './tree/tree.component';
 
 export const DemoRoutes = [
   {
@@ -42,6 +43,10 @@ export const DemoRoutes = [
       {
         path: 'progress',
         component: ProgressComponent
+      },
+      {
+        path: 'tree',
+        component: TreeComponent
       }
     ]
   }

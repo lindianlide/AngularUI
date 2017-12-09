@@ -1,0 +1,103 @@
+<dl-notice [classType]="'warning'" [(show)]="showTip">
+    {{tipMsg}}
+</dl-notice>
+<header>
+    <h1>树</h1>
+    <label>用于展示树形结构化数据</label>
+</header>
+<section class="dl-content">
+    <h2>普通树结构</h2>
+    <section>
+        <dl-tree [data]="data" [config]="config" [operation]="operation" (onClick)="onClick($event)"></dl-tree>
+        <div>
+            <dl-button [classType]="'primary'" (click)="edit()">编辑</dl-button>
+            <dl-button [classType]="'icon'" [i]="'plus'" (click)="add()">增加</dl-button>
+            <dl-button [classType]="'warning'" (click)="delete()">删除</dl-button>
+            <dl-button [classType]="'operate'" (click)="clearSearch()">清空搜索</dl-button>
+        </div>
+    </section>
+    <div class="h-20"></div>
+  <pre class="dl-pre">
+    <code>
+       {{treeHtml}}
+       {{treeCode}}
+    </code>
+  </pre>
+
+    <h2>复选框树结构</h2>
+    <dl-tree [data]="dataCheck" [config]="configCheck" [operation]="operationCheck"
+             (onSelect)="onSelect($event)"></dl-tree>
+    <div>
+        <dl-button [classType]="'primary'" (click)="checkAll()">选中所有节点</dl-button>
+        <dl-button [classType]="'primary'" (click)="check()">选中指定节点(Test1, Test2)</dl-button>
+        <dl-button [classType]="'warning'" (click)="clearAll()">清除选中节点</dl-button>
+        <dl-button [classType]="'warning'" (click)="clear()">清除指定节点(Test1, Test2)</dl-button>
+    </div>
+
+    <div class="h-20"></div>
+  <pre class="dl-pre">
+    <code>
+       {{treeHtmlCheck}}
+       {{treeCodeCheck}}
+    </code>
+  </pre>
+
+
+    <h2>配置项参数</h2>
+    <table class="demo">
+        <thead>
+        <tr>
+            <th width="20%">属性</th>
+            <th width="10%">类型</th>
+            <th width="20%">缺省值</th>
+            <th width="50%">描述</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td>data</td>
+            <td>any</td>
+            <td>{{ '{}' }}</td>
+            <td>组件数据, 对象或数组</td>
+        </tr>
+        <tr>
+            <td>config</td>
+            <td>any</td>
+            <td>{{ '{}' }}</td>
+            <td>可选, 配置参数</td>
+        </tr>
+        <tr>
+            <td>operation</td>
+            <td>any</td>
+            <td>{{ '{action: \'show\'}' }}</td>
+            <td>可选, 操作</td>
+        </tr>
+        <tr>
+            <td>onClick</td>
+            <td>Function</td>
+            <td>null</td>
+            <td>可选, 点击节点事件</td>
+        </tr>
+        <tr>
+            <td>onSelect</td>
+            <td>Function</td>
+            <td>null</td>
+            <td>可选, 勾选节点事件</td>
+        </tr>
+        </tbody>
+    </table>
+
+    <h2>API(数据、配置、操作)</h2>
+    <div class="h-20"></div>
+  <pre class="dl-pre">
+    <code>
+       {{dataDesc}}
+    </code>
+    <code>
+       {{configDesc}}
+    </code>
+    <code>
+       {{operationDesc}}
+    </code>
+  </pre>
+</section>

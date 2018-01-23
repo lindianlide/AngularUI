@@ -6,6 +6,8 @@ import { NoticeComponent } from './notice/notice.component';
 import { ModalComponent } from './modal/modal.component';
 import { ProgressComponent } from './progress/progress.component';
 import { TreeComponent } from './tree/tree.component';
+import { TagComponent } from './tag/tag.component';
+
 
 export const DemoRoutes = [
   {
@@ -47,6 +49,10 @@ export const DemoRoutes = [
       {
         path: 'tree',
         component: TreeComponent
+      },
+      {
+        path: 'tag',
+        component: TagComponent
       }
     ]
   }

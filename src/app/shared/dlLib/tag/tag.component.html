@@ -1,0 +1,12 @@
+<ul class="condition">
+  <li *ngFor="let condition of data;let i = index">
+    <label>{{condition.name}}：</label>
+    <div class="conditon-tag">
+      <a *ngFor="let item of condition.value;let j = index"
+         [class.active]="default[condition.id] == item.id" (click)="itemChanged(i, j)"
+         href="javascript:void(0);">
+        {{item.name}}
+      </a>
+    </div>
+  </li>
+</ul>

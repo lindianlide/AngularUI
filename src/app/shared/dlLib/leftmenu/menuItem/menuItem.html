@@ -1,0 +1,25 @@
+<li *ngIf="!menuItem.hidden" [class.selected]="router.url.indexOf(menuItem.route.paths[1]) !== -1" [title]="menuItem.title"
+[ngClass]="{'al-sidebar-list-item': !child, 'ba-sidebar-sublist-item': child, 'with-sub-menu': menuItem.children, 'ba-sidebar-item-expanded': menuItem.expanded}">
+  <!--overview、volume-->
+  <a *ngIf="!menuItem.children && !menuItem.url" (mouseenter)="onHoverItem($event, item)" (click)="gotoRouter(menuItem.route.paths)" class="al-sidebar-list-link">
+    <i *ngIf="menuItem.icon" class="{{ menuItem.icon }}"></i><span class="algin-middle">{{ menuItem.title }}</span>
+  </a>
+  <!--unuse-->
+  <a *ngIf="!menuItem.children && menuItem.url" (mouseenter)="onHoverItem($event, item)" [href]="menuItem.url" [target]="menuItem.target" class="al-sidebar-list-link">
+    <i *ngIf="menuItem.icon" class="{{ menuItem.icon }}"></i><span class="algin-middle">{{ menuItem.title }}</span>
+  </a>
+<!--resource-->
+  <a *ngIf="menuItem.children" [ngClass]="{'rootSelected': menuItem.selected && (sidebarCollapsed || !menuItem.expanded)}" (mouseenter)="onHoverItem($event, item)" href (click)="onToggleSubMenu($event, menuItem)" class="al-sidebar-list-link">
+    <i *ngIf="menuItem.icon" class="{{ menuItem.icon }}"></i><span class="algin-middle">{{ menuItem.title }}</span>
+    <b class="fa fa-angle-down" [ngClass]="{'fa-angle-up': menuItem.expanded}"></b>
+  </a>
+
+  <ul *ngIf="menuItem.children" class="al-sidebar-sublist" [ngClass]="{'slide-right': menuItem.slideRight}">
+    <dl-menu-item [menuItem]="subItem"
+                  [child]="true"
+                  (itemHover)="onHoverItem($event)"
+                  (toggleSubMenu)="onToggleSubMenu($event, subItem)"
+                  *ngFor="let subItem of menuItem.children"></dl-menu-item>
+  </ul>
+
+</li>

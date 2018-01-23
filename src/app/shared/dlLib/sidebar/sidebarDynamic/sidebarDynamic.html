@@ -1,0 +1,8 @@
+<aside class="al-sidebar" sidebarResize>
+  <dl-leftmenu [menuHeight]="menuHeight"
+           [sidebarCollapsed]="isMenuCollapsed"
+           (expandMenu)="menuExpand()"></dl-leftmenu>
+</aside>
+<div class="bottom" (click)="toggleMenu()">
+  <a><span [ngClass]="{'slider-right':isMenuCollapsed,'slider-left':!isMenuCollapsed}"></span></a>
+</div>

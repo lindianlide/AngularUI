@@ -11,6 +11,8 @@ import { NoticeComponent } from './notice/notice.component';
 import { ModalComponent } from './modal/modal.component';
 import { ProgressComponent } from './progress/progress.component';
 import { TreeComponent } from './tree/tree.component';
+import { TagComponent } from './tag/tag.component';
+import { DemoService } from './demo.service';
 
 @NgModule({
   declarations: [
@@ -22,8 +24,10 @@ import { TreeComponent } from './tree/tree.component';
     NoticeComponent,
     ModalComponent,
     ProgressComponent,
-    TreeComponent
+    TreeComponent,
+    TagComponent
   ],
+  providers:[DemoService],
   imports: [
     SharedModule,
     RouterModule.forChild(DemoRoutes)

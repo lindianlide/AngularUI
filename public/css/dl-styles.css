@@ -1,4 +1,9 @@
 /* pagination */
+
+ul li{
+    list-style: none;
+}
+
 .pagination {
     margin: 0;
     padding: 0;
@@ -171,23 +176,23 @@
 /* tab */
 
 /* timepicker */
-.yk-timepicker input.form-control {
+.dl-timepicker input.form-control {
     font-size: 12px;
     line-height: 1;
     padding: 7px;
     border-radius: 2px;
 }
 
-.yk-timepicker input.form-control:focus {
+.dl-timepicker input.form-control:focus {
     border-color: #1898eb;
     outline: none;
 }
 
-.yk-timepicker .chevron:before {
+.dl-timepicker .chevron:before {
     border-width: 1px 1px 0 0 !important;
 }
 
-.yk-timepicker .btn-outline-primary {
+.dl-timepicker .btn-outline-primary {
     font-weight: normal;
     font-size: 12px;
     padding: 8px 16px;
@@ -203,9 +208,9 @@
     -o-transition: box-shadow .4s cubic-bezier(.25, .8, .25, 1), background-color .4s cubic-bezier(.25, .8, .25, 1);
 }
 
-.yk-timepicker .btn-outline-primary:focus,
-.yk-timepicker .btn-outline-primary:hover,
-.yk-timepicker .btn-outline-primary:active {
+.dl-timepicker .btn-outline-primary:focus,
+.dl-timepicker .btn-outline-primary:hover,
+.dl-timepicker .btn-outline-primary:active {
     outline: none;
     color: #fff;
     background-color: #0275d8;

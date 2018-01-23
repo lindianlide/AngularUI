@@ -1,0 +1,18 @@
+<section class="dl-content-header">
+  <h1>标签-Tag </h1>
+  <small>进行标记和分类的小标签，目前常用于表示状态。</small>
+</section>
+
+<section class="dl-content">
+  <h2>标签展示</h2>
+  <p>按钮类型的标签，对表格或内容，进行筛选的按钮类标签。</p>
+  <dl-tag [data]="conditionData"  [default]="default" (onShowCondition)="onShowCondition($event)"></dl-tag>
+
+  <div class="h-20"></div>
+  <pre class="dl-pre">
+    <code>
+      {{tagCode}}
+    </code>
+  </pre>
+
+</section>

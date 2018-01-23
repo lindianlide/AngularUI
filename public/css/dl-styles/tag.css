@@ -1,0 +1,63 @@
+ul.condition {
+    padding-left: 0px;
+    font-weight: 400;
+    font-size: 14px;
+    font-style: normal;
+    color: #7C868D;
+    margin-bottom: 0px;
+    list-style: none;
+    -webkit-margin-before: 0;
+    -webkit-margin-after: 0;
+    -webkit-margin-start: 0;
+    -webkit-margin-end: 0;
+    -webkit-padding-start: 0;
+}
+
+ul.condition .conditon-tag {
+    overflow: hidden;
+}
+
+ul.condition li {
+    position: relative;
+    margin-bottom: 10px;
+}
+
+ul.condition li label {
+    font-family: 'MicrosoftYaHei', 'Microsoft YaHei';
+    text-align: right;
+    white-space: nowrap;
+    width: 85px;
+    float: left;
+    margin-right: 13px;
+    line-height: 28px;
+}
+
+ul.condition li a {
+    min-width: 56px;
+    width: auto;
+    height: 28px;
+    line-height: 28px;
+    border-radius: 14px;
+    font-size: 14px;
+    font-weight: normal;
+    text-align: center;
+    padding: 0 10px;
+    margin: 0 5px 0 0;
+    display: inline-block;
+    cursor: pointer;
+    color: #4D5761;
+}
+
+ul.condition li a:hover {
+    background-color: #f8f8f8;
+}
+
+ul.condition li a.active {
+    color: white;
+    background-color: #108ee9;
+}
+
+ul.condition li span {
+    margin-right: 5px;
+}
+

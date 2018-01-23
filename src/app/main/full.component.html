@@ -1,5 +1,7 @@
 <dl-navbar (switchSidebar)="switch($event)"></dl-navbar>
-<dl-sidebar-static  [switchSidebar]="switchSidebar"></dl-sidebar-static>
+<!--<dl-sidebar-static  [switchSidebar]="switchSidebar"></dl-sidebar-static>-->
+<dl-sidebar-dynamic [hidden]="router.url.indexOf('/main/components') == -1" ></dl-sidebar-dynamic>
+
 <div class="dl-content-wrapper" [class.dl-sidebar-collapsed-content]="isCollapsed || switchSidebar === 'home'">
     <router-outlet></router-outlet>
 </div>

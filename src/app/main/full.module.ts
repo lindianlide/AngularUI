@@ -4,16 +4,19 @@ import { FullComponent } from './full.component';
 import { FullRoutes } from './full.routes';
 import { SharedModule } from '../shared/shared.module';
 import { HomeComponent } from './home/home.component';
+import { FullService } from './full.service';
+
 
 @NgModule({
-  declarations: [
-    FullComponent,
-    HomeComponent
-  ],
-  imports: [
-    SharedModule,
-    RouterModule.forChild(FullRoutes)
-  ],
+    declarations: [
+        FullComponent,
+        HomeComponent
+    ],
+    providers: [FullService],
+    imports: [
+        SharedModule,
+        RouterModule.forChild(FullRoutes)
+    ],
 
 })
 
